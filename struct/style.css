@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+.dados {
+    margin-top: 10%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+.inputs h1 {
+   text-align: center;
+   margin-right: 50%;
+}
+.inputs {
+    margin-left: 30%;
+    
+}
+.inputs input {
+    width: 50%;
+    border-radius: 0.2rem;
+    font-size: 15px;
+    border: 1px solid rgb(50, 50, 50);
+    padding: revert;
+}
+#desc {
+    height: 120px;
+}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+button {
+    width: 51%;
+    height: 35px;
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+}
+.print span {
+    font-size: 17px;
+}
+.print {
+    display: none;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 600px;
+}
+.print h1 {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.print h2 {
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 1px;
+}
+
+.assinatura {
+    border-top: 1px solid black;
+    text-align: center;
+}
+@media print {
+    .print {
+        display: block;
+    }
+    .dados {
+        display: none;
+    }
+}

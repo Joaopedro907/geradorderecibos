@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissão de recibos</title>
+    <link rel="stylesheet" href="struct/style.css">
+</head>
+<body>
+    <div class="dados">
+        
+        <div class="inputs">
+            <h1>GERADOR DE RECIBOS</h1><br><br>
+            <label for="">Seu nome: </label><br>
+            <input type="text" id="seu_nome" placeholder="Nome completo"><br>
+
+            <label for="">Nome do cliente: </label><br>
+            <input type="text" id="nome" placeholder="Nome completo"><br>
+
+            <label for="">Valor: </label><br>
+            <input type="number" step="0.01" id="valor" placeholder="Digite somente o valor"><br>
+            <label for="">Serviços: </label><br>
+            <input type="text" id="desc" placeholder="Escreva detalhadamento os serviços que foram prestados"><br><br>
+
+            <button onclick="gerarRecibo()">GERAR RECIBO</button>
+        </div>
+    </div>
+    <div class="print">
+        <h1>RECIBO</h1>
+        <p>Data de emissão: <span id="recibo_data"></span>
+        <p>Eu, <span id="recibo_seu_nome"></span><br> recebi de <span id="recibo_nome"></span></p>
+        <h2>R$ <h2 id="recibo_valor"></h2></23><br>
+        <p>Serviços prestados:<br>
+            <span id="recibo_desc"></span>
+        </p><br>
+        <p>João Pedro de Oliveira Santos<br> Celular: +55 (31) 98716-4302<br> E-mail: joaopedrowebdev@gmail.com</p>
+        </p><br><br>
+        <div class="assinatura">Assinatura</div>
+        <i>Este recibo não é uma nota fiscal. É apenas um comprovante que você pagou pelo serviço prestado.</i>
+    </div>
+    <script src="script/geradorRecibo.js"></script>
+</body>
+</html>
